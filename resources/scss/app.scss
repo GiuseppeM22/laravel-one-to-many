@@ -1,0 +1,9 @@
+@import '~bootstrap/scss/bootstrap';
+
+.container img{
+    max-width: 100%;
+}
+
+.carde{
+    width: calc(100% / 3 - 16px);
+}
