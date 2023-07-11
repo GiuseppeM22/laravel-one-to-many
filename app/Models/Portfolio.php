@@ -15,4 +15,8 @@ class Portfolio extends Model
         "description",
         "link"
     ];
+
+    public function type(){
+        return $this->belongsTo(Type::class);
+    }
 }
