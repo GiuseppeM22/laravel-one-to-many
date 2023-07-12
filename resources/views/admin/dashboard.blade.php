@@ -20,6 +20,7 @@
                         </div>
                         <div>
                             <p>{{$item->description}}</p>
+                            <p>categoria:{{ $item->types_id }}</p>
                             <a class="text-decoration-none " href="{{$item->link}}">Vai al Progetto su github</a>
                         </div>
                         <div>

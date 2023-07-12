@@ -13,7 +13,8 @@ class Portfolio extends Model
         "name",
         "image",
         "description",
-        "link"
+        "link",
+        "types_id"
     ];
 
     public function type(){

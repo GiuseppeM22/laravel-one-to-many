@@ -27,7 +27,8 @@ class StorePortfolioRequest extends FormRequest
             "name"=>"required",
             "image"=>"nullable",
             "description"=>"required",
-            "link"=>"required"
+            "link"=>"required",
+            "types_id" => "nullable|exists:types,id"
         ];
     }
 }

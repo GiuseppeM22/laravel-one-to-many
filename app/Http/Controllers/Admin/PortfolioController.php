@@ -5,6 +5,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\StorePortfolioRequest;
 use App\Http\Requests\UpdatePortfolioRequest;
 use App\Models\Portfolio;
+use App\Models\Type;
 
 class PortfolioController extends Controller
 {
@@ -26,6 +27,9 @@ class PortfolioController extends Controller
     public function create()
     {
         return view('admin.create');
+
+        $types = Type::all();
+        return view('admin.create', compact('types'));
 
     }
 
